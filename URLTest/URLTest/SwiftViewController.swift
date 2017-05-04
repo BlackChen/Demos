@@ -12,8 +12,10 @@ class SwiftViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.red;
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
+
+        _ = UIButton.init(type: UIButtonType(rawValue: 1)!)
 
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "返回", style: UIBarButtonItemStyle(rawValue: 0)!, target: self, action: NSSelectorFromString("back"))
 
